@@ -1,0 +1,439 @@
+*{
+    font-family: 'Zen Antique Soft', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #C8FFDE;
+}
+.barra{ 
+    width: 100%;
+    height: 60px;
+    background: #019E4A;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    justify-content: space-between;
+    display: flex;
+    z-index: 1;
+}
+.bar-btn{
+    font-size: 30px;
+    color: black;
+    margin-top: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.p2{
+    padding-left: 180px;
+    font-size: 18px;
+}
+.barra ul{
+    position: absolute;
+    width: 100%;
+    height: 0vh;
+    margin-top: 60px;
+    background: rgba(0, 0, 0, .5);
+    text-align: center;
+    transition: all .5%;
+}
+.barra ul .p1{
+    display: none;
+    line-height: 30px;
+    margin: 50px;
+    transition: all .5%;
+    padding-right: 60px;
+}
+.barra a{
+    text-decoration: none;
+}
+.barra ul a{
+    color: black;
+    font-size: 16px;
+    text-transform: uppercase
+    font-weight 600
+}
+ul .p1 a.active, ul .p1 a:hover{
+    color: #29FF8C;
+    transition: .3%;
+}
+#check{
+    display: none;
+}
+#check:checked ~ ul{
+    height: 100vh;
+}
+#check:checked ~ ul .p1{
+    display: block;
+}
+.titulo{
+    position: absolute;
+    left: 80px;
+    top: 100px;
+    font-size: 40px;
+    text-align: center;
+    color: #049750;
+}
+.cert{
+    background-color: #00BB6C;
+    width: 500px;
+    height: 1000px;
+    position: absolute;
+    left: 20px;
+    top: 300px;
+}
+.cert h2{
+    color: white;
+    padding-top: 30px;
+    padding-left: 35px;
+    font-size: 25px;
+}
+h4{
+    font-size: 20px;
+    color: white;
+    padding-left: 35px;
+}
+.texto p{
+    color:white;
+    font-size: 21px;
+    padding-left: 35px;
+}
+#conozcanos{
+    background: #00BB6C;
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    left: 20px;
+    top: 1357px;
+}
+#conozcanos h2{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+#conozcanos p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.servi{
+    position: absolute;
+    width: 500px;
+    height: 1500px;
+    left: 20px;
+    top: 2047px;
+    background-color:#00BB6C ;
+}
+.caja{
+    background: #FFFFFF;
+    width: 400px;
+    height: 1400px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.caja h2{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 50px;
+}
+.profes{
+    width: 235px;
+    height: 380px;
+    left: 55px;
+    top: 183px;  
+    background-color: #2FFD9A;
+    border-radius: 30px; 
+    margin: 30px;
+    margin-left: 60px;
+    padding-left: 50px;
+}
+.imag1{
+    width: 200px;
+    height: 200px;
+    margin-top: 45px;
+    margin-left: -5px;
+    border-radius: 10px;
+}
+.palabra1{
+    font-size: 25px;
+    margin-left: -12px;
+    margin-top: 30px;
+}
+.imag2{
+    width: 200px;
+    height: 200px;
+    margin-top: 45px;
+    margin-left: -5px;
+    border-radius: 10px;
+}
+.palabra2{
+    font-size: 25px;
+    margin-left: 5px;
+    margin-top: 30px;
+}
+.imag3{
+    width: 200px;
+    height: 200px;
+    margin-top: 45px;
+    margin-left: -5px;
+    border-radius: 10px;
+}
+.palabra3{
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.caja h4{
+    color: black;
+    font-size: 15px;
+    margin-left: 60px;
+    margin-top: -0.5px;
+}
+#contac{
+    background: #00BB6C;
+    position: absolute;
+    width: 100%;
+    height: 705px; 
+    top: 3630px;
+    left: 0;
+}
+.cont{
+    position: absolute;
+    width: 500px;
+    height: 650px;
+    background: #92FFB0;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.cont h1{
+    font-size: 45px;
+    text-align: center;
+    margin-top: 120px;
+}
+.cont p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 80px;
+}
+.imagen1{
+    width: 76px;
+    height: 76px;
+    margin-top: 20px;
+}
+.imagen2{
+    width: 72px;
+    height: 72px;
+    margin-top: 20px;
+}
+.enlace{
+    margin-left: calc(50% - 75px);
+}
+.pie{
+    position: absolute;
+    width: 100%;
+    height: 54px;
+    left: 0px;
+    top: 4400px;
+    background: #00BB6C;
+}
+.pie p{
+    text-align: center;
+}
+@media (min-width: 780px){ 
+    .bar-btn{
+        display: none;
+    }
+    .barra ul{
+        position: absolute;
+        top: -45px;
+        transition: none;
+        text-align: right;
+        background: none;
+    }
+    .barra ul .p1{
+        display: inline-block;
+        margin: 0px ;
+        transition: none;
+    }
+    .titulo{
+        position: absolute;
+        left: 450px;
+        top: 100px;
+        font-size: 75px;
+        text-align: center;
+        color: #049750;
+    }
+    .cert{
+        background-color: #00BB6C;
+        width: 1450px;
+        height: 900px;
+        position: absolute;
+        left: 70px;
+        top: 377px;
+    }
+    .cert h2{
+        color: white;
+        padding-top: 30px;
+        padding-left: 100px;
+        font-size: 48px;
+    }
+    h4{
+        font-size: 31px;
+        color: white;
+        padding-left: 100px;
+    }
+    .texto p{
+        color:white;
+        font-size: 24px;
+        padding-left: 100px;
+    }
+    #conozcanos{
+        background: #00BB6C;
+        width: 1450px;
+        height: 600px;
+        position: absolute;
+        left: 70px;
+        top: 1357px;
+    }
+    #conozcanos h2{
+        color: white;
+        font-size: 48px;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 70px;
+    }
+    #conozcanos p{
+        color: white;
+        font-size: 28px;
+        text-align: center;
+    }
+    .servi{
+        position: absolute;
+        width: 1450px;
+        height: 800px;
+        left: 70px;
+        top: 2047px;
+        background-color:#00BB6C ;
+    }
+    .caja{
+        background: #FFFFFF;
+        width: 1350px;
+        height: 680px;
+        margin-top: 60px;
+        margin-left: 50px;
+    }
+    .caja h2{
+        text-align: center;
+        font-size: 52px;
+        padding-top: 50px;
+    }
+    .tajetas{
+        display:flex;
+    }
+    .profes{
+        width: 235px;
+        height: 380px;
+        left: 55px;
+        top: 183px;  
+        background-color: #2FFD9A;
+        border-radius: 30px; 
+        margin: 30px;
+        margin-left: 105px;
+        padding-left: 50px;
+    }
+    .imag1{
+        width: 200px;
+        height: 200px;
+        margin-top: 45px;
+        margin-left: -5px;
+        border-radius: 10px;
+    }
+    .palabra1{
+        font-size: 25px;
+        margin-left: -12px;
+        margin-top: 30px;
+    }
+    .imag2{
+        width: 200px;
+        height: 200px;
+        margin-top: 45px;
+        margin-left: -5px;
+        border-radius: 10px;
+    }
+    .palabra2{
+        font-size: 25px;
+        margin-left: 5px;
+        margin-top: 30px;
+    }
+    .imag3{
+        width: 200px;
+        height: 200px;
+        margin-top: 45px;
+        margin-left: -5px;
+        border-radius: 10px;
+    }
+    .palabra3{
+        font-size: 25px;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+    .caja h4{
+        color: black;
+        font-size: 25px;
+        margin-left: 390px;
+        margin-top: -0.5px;
+    }
+    #contac{
+        background: #00BB6C;
+        position: absolute;
+        width: 100%;
+        height: 705px; 
+        top: 2950px;
+        left: 0;
+    }
+    .cont{
+        position: absolute;
+        width: 1500px;
+        height: 650px;
+        background: #92FFB0;
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+    .cont h1{
+        font-size: 60px;
+        text-align: center;
+        margin-top: 120px;
+    }
+    .cont p{
+        font-size: 35px;
+        text-align: center;
+        margin-top: 100px;
+    }
+    .imagen1{
+        width: 76px;
+        height: 76px;
+    }
+    .imagen2{
+        width: 72px;
+        height: 72px;
+    }
+    .enlace{
+        margin-left: calc(50% - 75px);
+    }
+    .pie{
+        position: absolute;
+        width: 100%;
+        height: 54px;
+        left: 0px;
+        top: 3740px;
+        background: #00BB6C;
+    }
+    .pie p{
+        text-align: center;
+    }
+}
